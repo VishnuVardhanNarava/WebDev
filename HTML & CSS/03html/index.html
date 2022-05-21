@@ -1,0 +1,185 @@
+\<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnCodeOnline</title>
+    <link rel="shortcut icon" href="Favicon/lco.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        html{
+            background-color: #101526;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #icon {
+            padding-right: 20px;
+        }
+        p {
+            line-height: 30px;\
+        }
+        img {
+            max-width: 5in;
+        }
+        #course3 img{
+            width: 5in;
+            height: 3in;
+        }
+        /*button{
+            background-color: #e588ff;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            border: 0cm;
+        }*/
+        #NavigationBar {
+            color: #222B45;
+            background-color: #222B45;
+            padding: 20px;
+            border: 0px;
+            margin: 0px;
+        }
+        #div1  h4{
+            margin-bottom: 0in;
+        }
+        #div1  h1{
+            margin-top: 0in;
+        }
+        #div1{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: white;
+            background: linear-gradient(to right, #613390,#ECB8FB);
+            padding-top: 0.2in;
+            padding-bottom: 0.1in;
+            padding-left: 0.2in;
+        }
+        #div2{
+            color: #ffffff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 30px;
+        }
+        #course1{
+            color: #ffffff;
+            width: 480px;
+            padding: 20px;
+            padding-top: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        #FreeButton {
+            background-color: #814b91;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            border: 0cm;
+            cursor: grab;
+            transition: box-shadow 300ms;
+        }
+        #FreeButton:hover {
+            box-shadow: 0px 0px 40px 40px #e588ff inset;
+        }
+        #course2 {
+            color: #ffffff;
+            width: 480px;
+            padding: 20px;
+            padding-top: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px
+        }
+        #BuyNow {
+            background-color: #814b91;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            border: 0cm;
+            cursor: grab;
+            transition: box-shadow 300ms;
+        }
+        #BuyNow:hover{
+            box-shadow: 0px 0px 40px 40px #e588ff inset;
+        }
+        #TrialButton {
+            color: #ECB8FB;
+            background-color: transparent;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 5px;
+            border-width: 1px;
+            border-color: #814b91;
+            cursor: grab;
+            transition: box-shadow 300ms;  
+        }
+        #TrialButton:hover{
+            box-shadow: 0px 0px 40px 40px #222B45 inset;
+        }
+        #Price {
+            font-size: 25px;
+        }
+        strike {
+            font-size: 15px;
+        }
+        #course3 {
+            color: #ffffff;
+            width: 480px;
+            padding: 20px;
+            padding-top: 10px;
+            border-radius: 10px;
+            margin-bottom: 10px
+            
+        }
+    </style>
+</head>
+<body>
+    <div id = "NavigationBar">
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="service/service.html">Service</a></li>
+            <li><a href="contact/contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <div id="div1">
+        <h4><img id = "icon" src="Favicon/lco.png" alt="" width="60px">Hi Guest,</h6>
+        <h1>Welcome to <span class="TextFill">LearnCodeOnline</span></h1>
+    </div>
+
+    <div id="div2">
+        <h2>Courses</h1>
+    </div>
+<div class="cources">
+    <div id="course1">
+        <h3>NextJS Full stack crash course</h3>
+        <img src="Images/JS.png" alt="">
+        <p>
+            Learn NextJS by building a full stack application with mongodb Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, et! Facere itaque explicabo iste alias, quaerat eum doloribus necessitatibus nisi laudantium beatae consectetur eaque.
+        </p>
+        <a href="https://courses.learncodeonline.in/learn/NextJS-Full-stack-crash-course" target="_blank" rel="noopener noreferrer"><button id ="FreeButton">ENROLL FOR FREE</button></a>
+    </div>
+
+    <div id = "course2">
+        <h3>Pro Backend Developer cource</h3>
+        <img src="Images/BackEnd.jpg" alt="">
+        <p >Pro for a reason. Learn to build complex backend that can be used for any web or mobile application. Your REST API will be in production with docs, social logins, images, authentication, mails and mode. This is a trua Pro backend course.</p>
+        <p id="Price"> ₹399 <strike>1399</strike></p>
+        <a href="https://courses.learncodeonline.in/learn/Pro-Backend-Developer-course" target="_blank" rel="noopener noreferrer"><button id="BuyNow">BUY NOW</button></a>
+        <a href="https://courses.learncodeonline.in/learn/Pro-Backend-Developer-course" target="_blank" rel="noopener noreferrer"><button id = "TrialButton">START A FREE TRIAL</button></a>
+    </div>
+
+    <div id = "course3">
+        <h3>AWS Architect for real world</h3>
+        <img src="Images/AWS.jpg" alt="">
+        <p>A course focused on real-world implementation of AWS services as an architect. Of cource, AWS exam content is covered too but the focus is mainly on real-world usage.</p>
+        <p id = "Price"> ₹299 <strike>1299</strike></p>
+        <a href="https://courses.learncodeonline.in/learn/AWS-Architect-for-real-world" target="_blank" rel="noopener noreferrer"><button id = "BuyNow">BUY NOW</button></a>
+        <a href="https://courses.learncodeonline.in/learn/AWS-Architect-for-real-world" target="_blank" rel="noopener noreferrer"><button id = "TrialButton">START A FREE TRAIL</button></a>
+    </div>
+</div>
+</body>
+</html>
