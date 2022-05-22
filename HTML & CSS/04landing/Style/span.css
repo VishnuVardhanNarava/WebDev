@@ -1,0 +1,18 @@
+span {
+    font-size: 100px;
+    font-weight: 900;
+    background: transparent;
+    color: transparent;
+}
+
+.TextFill {
+    background-image: -webkit-linear-gradient(left, transparent -50%, black 100%);
+    -webkit-background-clip: text;
+    animation : stripes 4s linear infinite;
+}
+
+@keyframes stripes {
+    100% {
+      background-position: 190px 0;
+    }
+  }
