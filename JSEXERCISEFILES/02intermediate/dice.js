@@ -1,6 +1,6 @@
-let upper = 16;
-let lower = 11;
+let upper = 25;
+let lower = 20;
 
-myRandom = Math.floor(Math.random() * (upper - lower) + lower);
+let myRandom = Math.floor(Math.random() * (upper - lower + 1) + lower);
 
 console.log(myRandom);
