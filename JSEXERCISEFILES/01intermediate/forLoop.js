@@ -1,5 +1,7 @@
 const months = ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"];
 
+console.log(months.length);
+
 for (let index = 0; index < months.length; index++){
     console.log(months[index]);
 }
