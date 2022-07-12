@@ -8,6 +8,7 @@ span {
 .TextFill {
     background-image: -webkit-linear-gradient(left, transparent -50%, black 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     animation : stripes 4s linear infinite;
 }
 

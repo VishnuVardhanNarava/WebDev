@@ -17,8 +17,15 @@
     <p class="class3">its p tag 3</p>
     <p class="class4">its p tag 4</p>
 
-    <input type="text" id="myform" name="myform" placeholder="Enter text here" onkeypress="validate()">
-    <button>Click here</button>
+    <input type="text" id="myform" name="myform" placeholder="Enter text here">
+    <button onclick="myvalidation()" id="mybutton">Click here</button>
+    <h4 id="warning">* Enter alpha-numeric characters only!</h4>
+
+    <form action="" id="newform">
+        <input type="text" name="username" placeholder="User Name" id="username">
+        <input type="text" name="realname" placeholder="Real Name" id="realname">
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
 
 
 <script src="script.js"></script>

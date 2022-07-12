@@ -1,0 +1,74 @@
+html {
+    background-color: #2E5F5F;
+}
+
+#myform {   
+    border-radius: 6mm;
+    border-width: 0mm;
+    padding-left: 3mm;
+    width: 4in;
+    height: 10mm;
+    background-color: rgb(219, 208, 208);
+    color: black;
+    transition: box-shadow 300ms ease-in-out;
+}
+#myform:hover {
+    outline: 0;
+    box-shadow: 0px 0px 15px 2px #080e0f;
+}
+
+button{
+    border-radius: 6mm;
+    border-width: 0mm;
+    padding: 3mm;
+    color: white;
+    background-color: black;
+    transition: box-shadow 300ms ease-in-out;
+}
+#mybutton:hover {
+    outline: 0;
+    box-shadow: 0px 0px 15px 2px #080e0f;
+}
+
+#warning {
+    color: transparent;
+    padding-top: 0px;
+    margin-top: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+form {
+    transition: box-shadow 300ms ease-in-out;
+}
+#username:hover {
+    outline: 0;
+    box-shadow: 0px 0px 15px 2px #080e0f;
+}
+#realname:hover {
+    outline: 0;
+    box-shadow: 0px 0px 15px 2px #080e0f;
+}
+#submitButton:hover {
+    outline: 0;
+    box-shadow: 0px 0px 15px 2px #080e0f;
+}
+#username {
+    border-radius: 6mm;
+    border-width: 0mm;
+    padding-left: 3mm;
+    width: 4in;
+    height: 10mm;
+    background-color: rgb(219, 208, 208);
+    color: black;
+    transition: box-shadow 300ms ease-in-out;
+}
+#realname {
+    border-radius: 6mm;
+    border-width: 0mm;
+    padding-left: 3mm;
+    width: 4in;
+    height: 10mm;
+    background-color: rgb(219, 208, 208);
+    color: black;
+    transition: box-shadow 300ms ease-in-out;
+}
