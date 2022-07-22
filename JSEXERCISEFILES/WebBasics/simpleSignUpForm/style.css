@@ -8,8 +8,8 @@ body{
     border: 2px ridge rgb(100, 100, 100);
     text-align: center;
     background-color: rgb(75, 75, 75);
-    height: 610px;
-    width: 400px;
+    height: 650px;
+    width: 450px;
     padding: 20px;
     padding-bottom: 10px;
     margin-left: 600px;
@@ -22,11 +22,10 @@ body{
     font-size: 40px;
 }
 #warn1{
-    color: transparent;
+    color: rgb(72, 121, 75);
 }
 #warn2{
-    color: transparent;
-    margin-top: -37px;
+    color: rgb(72, 121, 75);
 }
 input{
     width: 300px;
