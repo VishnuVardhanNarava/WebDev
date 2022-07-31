@@ -5,7 +5,7 @@ document.getElementById("signupform").addEventListener("input", ()=>{
     let password = document.getElementById("password").value;
     let cpassword = document.getElementById("confirmpassword").value;
 
-    if(!regexp.test(usrname) && regexp.test(password) && password == cpassword){
+    if(!regexp.test(usrname) && usrname != "" && regexp.test(password) && password == cpassword){
         document.getElementById("submit").disabled = false;
     }else{
         document.getElementById("submit").disabled = true;
@@ -26,17 +26,8 @@ document.getElementById("signupform").addEventListener("submit", event => {
 //validation for firstname and lastname to not take any special characters
 
 document.getElementById("namediv").addEventListener("input", () => {
-    let fvalue = document.getElementById("firstname").value;
-    let lvalue = document.getElementById("lastname").value;
-    
-    if(regexp.test(fvalue) || regexp.test(lvalue)){
-        let val1 = fvalue.replace(/[\~\!\@\#\$\%\^\&\*\(\)\_\+\-\=\[\]\{\}\|\;\'\:\"\,\.\<\>\?]/g, "");
-        let val2 = lvalue.replace(/[\~\!\@\#\$\%\^\&\*\(\)\_\+\-\=\[\]\{\}\|\;\'\:\"\,\.\<\>\?]/g, "");
-        document.getElementById("firstname").value = val1;
-        document.getElementById("lastname").value = val2;
-    }else{
-        return true;
-    }
+    document.getElementById("firstname").value = document.getElementById("firstname").value.replace(/[\~\!\@\#\$\%\^\&\*\(\)\_\+\-\=\[\]\{\}\|\;\'\:\"\,\.\<\>\?]/g, "");
+    document.getElementById("lastname").value = document.getElementById("lastname").value.replace(/[\~\!\@\#\$\%\^\&\*\(\)\_\+\-\=\[\]\{\}\|\;\'\:\"\,\.\<\>\?]/g, "");
 })
 
 //validation for username
@@ -63,14 +54,14 @@ document.getElementById("passdiv").addEventListener("input", () => {
     }
 })
 
-//password validation to check wether the password has any special characters in it or not
+//To warn the user if there are is no special character included in the password field
 
-document.getElementById("password").addEventListener("input", () => {
-    let pvalue = document.getElementById("password").value;
+document.getElementById("password").addEventListener("input", event => {
+    let pvalue = event.target.value;
     if(!regexp.test(pvalue) && pvalue != ""){
-        document.getElementById("warn2").style.color = "#EA8024";
+        document.getElementById("warn").style.color = "red";
     }else{
-        document.getElementById("warn2").style.color = "rgb(72, 121, 75)";
+        document.getElementById("warn").style.color = "transparent";
     }
 })
 

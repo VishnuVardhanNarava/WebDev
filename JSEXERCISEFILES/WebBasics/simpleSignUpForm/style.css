@@ -21,11 +21,8 @@ body{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 40px;
 }
-#warn1{
-    color: rgb(72, 121, 75);
-}
-#warn2{
-    color: rgb(72, 121, 75);
+#warn{
+    color: transparent;
 }
 input{
     width: 300px;
