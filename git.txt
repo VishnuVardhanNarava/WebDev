@@ -1,0 +1,2 @@
+git remote -v      //To list the linked repos
+git remote add origin "url" // To link a repo
