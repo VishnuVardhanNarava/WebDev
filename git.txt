@@ -1,2 +1,3 @@
 git remote -v      //To list the linked repos
 git remote add origin "url" // To link a repo
+git revert HEAD^   //Reverts the commit to staging area
